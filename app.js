@@ -19,9 +19,13 @@ $("#shoutOut2").hide();
 $("#shoutOut3").hide();
 $("#shoutOut4").hide();
 $("#shoutOut5").hide();
+$("#shoutOut6").hide();
+$("#shoutOut7").hide();
+$("#shoutOut8").hide();
+$("#shoutOut9").hide();
 
 
-$("#shoutOut").on("click", function(){
+ $("#shoutOut").on("click", function(){
 	console.log("Hi");
 	for(var i = 0; i < shoutOutArray1.length; i++) {
 		$("#firstDiv").append("<li>"+shoutOutArray1[i]+"</li>");
@@ -29,6 +33,7 @@ $("#shoutOut").on("click", function(){
 	$("#shoutOut").fadeOut();
 	$("#shoutOut2").fadeIn("fast");
 });
+
 
 $("#shoutOut2").on("click", function(){
 	console.log("Hi");
@@ -42,8 +47,8 @@ $("#shoutOut2").on("click", function(){
 
 $("#shoutOut3").on("click", function(){
 	console.log("Hi");
-	for(var i = 0; i < shoutOutArray2.length; i++) {
-		$("#thirdDiv").append("<li>"+shoutOutArray1[i]+"</li>");
+	for(var i = 0; i < shoutOutArray3.length; i++) {
+		$("#thirdDiv").append("<li>"+shoutOutArray3[i]+"</li>");
 	}
 	$("#shoutOut3").fadeOut("fast");
 	$("#shoutOut4").fadeIn("fast");
@@ -52,12 +57,58 @@ $("#shoutOut3").on("click", function(){
 
 $("#shoutOut4").on("click", function(){
 	console.log("Hi");
-	for(var i = 0; i < shoutOutArray2.length; i++) {
-		$("#fourthDiv").append("<li>"+shoutOutArray1[i]+"</li>");
+	for(var i = 0; i < shoutOutArray4.length; i++) {
+		$("#fourthDiv").append("<li>"+shoutOutArray4[i]+"</li>");
 	}
 	$("#shoutOut4").fadeOut("fast");
 	$("#shoutOut5").fadeIn("fast");
 	$("#thirdDiv").slideUp("slow");
+});
+
+$("#shoutOut5").on("click", function(){
+	console.log("Hi");
+	for(var i = 0; i < shoutOutArray5.length; i++) {
+		$("#fifthDiv").append("<li>"+shoutOutArray5[i]+"</li>");
+	}
+	$("#shoutOut5").fadeOut("fast");
+	$("#shoutOut6").fadeIn("fast");
+	$("#fourthDiv").slideUp("slow");
+});
+$("#shoutOut6").on("click", function(){
+	console.log("Hi");
+	for(var i = 0; i < shoutOutArray6.length; i++) {
+		$("#sixthDiv").append("<li>"+shoutOutArray6[i]+"</li>");
+	}
+	$("#shoutOut6").fadeOut("fast");
+	$("#shoutOut7").fadeIn("fast");
+	$("#fifthDiv").slideUp("slow");
+});
+$("#shoutOut7").on("click", function(){
+	console.log("Hi");
+	for(var i = 0; i < shoutOutArray7.length; i++) {
+		$("#seventhhDiv").append("<li>"+shoutOutArray7[i]+"</li>");
+	}
+	$("#shoutOut7").fadeOut("fast");
+	$("#shoutOut8").fadeIn("fast");
+	$("#sixthDiv").slideUp("slow");
+});
+$("#shoutOut8").on("click", function(){
+	console.log("Hi");
+	for(var i = 0; i < shoutOutArray8.length; i++) {
+		$("#eigthDiv").append("<li>"+shoutOutArray8[i]+"</li>");
+	}
+	$("#shoutOut8").fadeOut("fast");
+	$("#shoutOut9").fadeIn("fast");
+	$("#seventhDiv").slideUp("slow");
+});
+
+$("#shoutOut9").on("click", function(){
+	for(var i = 0; i < shoutOutArray9.length; i++) {
+		$("#ninthDiv").append("<li>"+shoutOutArray9[i]+"</li>");
+	}
+	$("#shoutOut9").fadeOut("fast");
+	$("#shoutOut").fadeIn("fast");
+	$("#eigthDiv").slideUp("slow");
 });
 //click button will load shout outs - fade in 
 //button changes to "more shout outs" loads 5 more should outs
