@@ -35,7 +35,7 @@ $("#thankyou").hide();
 	for(var i = 0; i < shoutOutArray1.length; i++) {
 		$("#firstDiv").append("<li>"+shoutOutArray1[i]+"</li>");
 	}
-	$("#shoutOut").fadeOut();
+	$("#shoutOut").hide();
 	$("#shoutOut2").fadeIn("fast");
 });
 
@@ -112,8 +112,8 @@ $("#shoutOut9").on("click", function(){
 	for(var i = 0; i < shoutOutArray9.length; i++) {
 		$("#ninthDiv").append("<li>"+shoutOutArray9[i]+"</li>");
 	}
-	$("#shoutOut9").hide();
-	$("#thankyou").show();
+	$("#shoutOut9").fadeOut("fast");
+	$("#thankyou").fadeIn("fast");
 	$("#eigthDiv").slideUp("slow");
 });
 
