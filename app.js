@@ -11,7 +11,7 @@ var shoutOutArray9 = ["Scott is doing a great job of leading us through this mat
 
 var i = 0;
 
-var array =[];
+//var array =[];
 
 $(document).ready(function(){
 // 	$.get("txt.txt", function(data){
