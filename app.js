@@ -19,8 +19,6 @@ $(document).ready(function(){
 // 		console.log(array);
 // 	});
 
-	
-
 $("#shoutOut2").hide();
 $("#shoutOut3").hide();
 $("#shoutOut4").hide();
@@ -29,6 +27,7 @@ $("#shoutOut6").hide();
 $("#shoutOut7").hide();
 $("#shoutOut8").hide();
 $("#shoutOut9").hide();
+$("#thankyou").hide();
 
 
  $("#shoutOut").on("click", function(){
@@ -36,7 +35,7 @@ $("#shoutOut9").hide();
 	for(var i = 0; i < shoutOutArray1.length; i++) {
 		$("#firstDiv").append("<li>"+shoutOutArray1[i]+"</li>");
 	}
-	$("#shoutOut").fadeOut("slow");
+	$("#shoutOut").fadeOut();
 	$("#shoutOut2").fadeIn("fast");
 });
 
@@ -113,11 +112,20 @@ $("#shoutOut9").on("click", function(){
 	for(var i = 0; i < shoutOutArray9.length; i++) {
 		$("#ninthDiv").append("<li>"+shoutOutArray9[i]+"</li>");
 	}
-	$("#shoutOut9").fadeOut("fast");
-	$("#shoutOut").fadeIn("fast");
+	$("#shoutOut9").hide();
+	$("#thankyou").show();
 	$("#eigthDiv").slideUp("slow");
 });
 
+$("#thankyou").on("click", function() {
+	document.location.reload(true)
+});
+
+// $("#shoutOut9").click(function(){
+// 	if(this.id == "#shoutOut") {
+// 		$("#shoutOut").fadeIn("fast");
+// 	}
+// });
 //click button will load shout outs - fade in 
 //button changes to "more shout outs" loads 5 more should outs
 
