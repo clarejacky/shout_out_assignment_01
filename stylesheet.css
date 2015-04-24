@@ -1,3 +1,21 @@
-li {
+body {
+	font-family: verdana, arial, sans-serif;
+	font-size: 14px;
+}
+#main {
+	width: 600px;
+	margin: auto;
+}
+
+div {
 	list-style-type: none;
+	width: 500px;
+	margin: 30px;
+}
+button {
+	width: 300px;
+	height: 30px;
+	margin: 20px 40px;
+	background-color: red;
+	border-radius: 10px;
 }
