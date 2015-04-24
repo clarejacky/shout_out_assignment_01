@@ -8,11 +8,18 @@ var shoutOutArray7 = ["Just the whole group. I feel like when we were given some
 var shoutOutArray8 = ["Rom was so great at explaining things today.", "I appreciated the discussion of group dynamics at the beginning of the day. So, thank you Scott, Fred, and Mark.", "Thanks for being an awesome partner on the peer project using jQuery, Kelly! Figuring out how to randomly generate age, weight, etc for a person and displaying it on the DOM was a lot of fun. And thanks for not wanting to just stop at the bare minimum and pushing both of us to do our best. That's a great attitude!", "I would like to thank Vince. Thanks to him, I was able to understand the material a lot more. He was also willing to listen to the feedback that I had and that also made it easier for me to take feedback from him.", "Props to Michelle for her insights re: validating balance and self-care as a means of success. As an achiever who stuggles to prioritize these things, I find this to be a really helpful approach.", "Want to say thanks to Rom for taking the time and explaining arrays in more depth to me.", "Rom kinda saved our project, I know a few on our team were feeling pretty lost by what she was typing, but I was able to keep up with it... but I don't think I could of typed it my self at this point in my schooling.", "Rom -- thank you for being so patient with me and pushing me to learn more. You are awesome!", "I loved Aaron's speech!", "To Fred: Thank you for taking the time to talk to me at the end of the day. It really helped me and I appreciated the support."];
 var shoutOutArray9 = ["Scott is doing a great job of leading us through this material, keeping each day keyed in to what the group is doing and how much progress we're making. Scott, thank you so much for giving us so much energy and heart.", "Thanks to Tracy for working with me and David Ly for stopping by and answering our questions.", "Thanks for pushing me, Scott! I may have obsessed over the fact that I 'opted out' had you not pushed a little.", "Michael -- thank you for taking the time today to help me through the peer pair challenge. You taught me new concepts and challenged me to figure out thing! I think, what we came up with is really cool! Thanks for being so awesome!", "Thanks to Alicia, and everyone who spoke today (Erik, Mary, Cody, Jeanne, Michelle & Tracy).", "My shout out actually is going to go to Cody, Kaitlin and Terry - our mandatory 10 minute break during the group challenge totally lifted the mood and made me laugh so hard. It helped me re-group and get back to the challenge!", "Thanks to Scott, just thanks.  I can tell by his approach and attitude to teaching us, he cares about our success."];
 
+
 var i = 0;
 
-
+var array =[];
 
 $(document).ready(function(){
+// 	$.get("txt.txt", function(data){
+// 		array = data.split("\n");
+// 		console.log(array);
+// 	});
+
+	
 
 $("#shoutOut2").hide();
 $("#shoutOut3").hide();
@@ -29,7 +36,7 @@ $("#shoutOut9").hide();
 	for(var i = 0; i < shoutOutArray1.length; i++) {
 		$("#firstDiv").append("<li>"+shoutOutArray1[i]+"</li>");
 	}
-	$("#shoutOut").fadeOut("fast");
+	$("#shoutOut").fadeOut("slow");
 	$("#shoutOut2").fadeIn("fast");
 });
 
@@ -43,6 +50,7 @@ $("#shoutOut2").on("click", function(){
 	$("#shoutOut3").fadeIn("fast");
 	$("#firstDiv").slideUp("slow");
 });
+
 
 $("#shoutOut3").on("click", function(){
 	console.log("Hi");
@@ -109,6 +117,7 @@ $("#shoutOut9").on("click", function(){
 	$("#shoutOut").fadeIn("fast");
 	$("#eigthDiv").slideUp("slow");
 });
+
 //click button will load shout outs - fade in 
 //button changes to "more shout outs" loads 5 more should outs
 
